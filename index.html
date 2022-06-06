@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel ="stylesheet" href="style.css">
+    <link href="http://fonts.cdnfonts.com/css/alien-2" rel="stylesheet">
+    <title>Insert Here</title>
+</head>
+<body onload="initGame()" onkeydown="enterKey(event)">
+    <div id="startScreen">
+        <div id="header">
+        <h1 id="intro">Alien Dance Party</h1>
+        <p id="directions">You have been tasked with picking up the stranded Aliens for their dance party. <br> Travel around the board in your spaceship. <br> <br> <img id="spaceShip" src ="https://mpng.subpng.com/20181121/bss/kisspng-clip-art-openclipart-illustration-image-spacecraft-home-aion-rsa-5bf4f7630f1b93.2622367215427807710619.jpg" height =80px > <br> <br> Collect all the partying aliens. <br> <img src = "https://i.gifer.com/origin/2b/2b0512a6a83b60cc52d4117e6adfd824_w200.gif" height="80px"> <br> See how many dancing aliens you can collect before you are overwhelmed by their dance moves. 
+        </p>
+        <button type="button" id="start" onclick="startGame()">Start Game</button>
+        </div>
+    </div>
+    <div id="gameOverScreen">
+        <h1 id="gameOverMsg"></h1>
+        <button type="button" id="reset" onclick="startGame()">Play Again?</button>
+    </div>
+    <div id="gameContainer">
+        <header id="header">
+            <h2>Alien Dance Party</h2> 
+            <button id="sound" onclick="toggleSound()"><img src="https://www.freeiconspng.com/thumbs/volume-icon/audio-sound-speaker-volume-icon-7.png" height ="50" width="50" ></button>
+        </header>
+        <div id="main">
+            <span id="score">Score: </span>
+            <span id="numScore"> 0</span>
+            <span id="level">Level: </span>
+            <span id="numLevel"> 1 </span> <br><br>
+        </div>
+        <div id="button">
+            <button class="up" onmousedown="move('up')">up</button> <br>
+            <button class="left" onmousedown="move('left')">left</button>
+            <button class="right" onmousedown="move('right')">right</button> <br>
+            <button class="down" onmousedown="move('down')">down</button>
+        </div>
+        <div id="board"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

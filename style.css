@@ -1,0 +1,249 @@
+
+* {
+    text-align: center;
+    font-family: 'Alien', sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url("https://thumbs.gfycat.com/AnimatedNeatAfricanelephant-size_restricted.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#spaceShip{
+    border-radius: 35%;
+    background-color: rgb(165, 185, 142);
+    box-shadow: 0 1px 5px 5px rgb(240, 234, 234);  
+}
+#gameContainer{
+    padding: 16px;
+    display: none;
+}
+
+
+ span{
+     color: chartreuse;
+ }
+
+ #reset{
+    transform: translateX(25%) ;
+    background: radial-gradient(circle, rgba(155, 211, 26, 0.8) 35%, rgb(233, 34, 8) 100%);
+    margin-right: 2em;
+    border-radius: 30%;
+    width: 4em;
+    height: 3em;
+    border: 2px solid rgb(238, 122, 13);
+    color: rgb(255, 0, 0);
+    font-size: 3em;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				-1px -1px 0 #000;
+ }
+ #start{
+    padding: .5em;
+    margin: .5em;
+    transform: translateX(25%) ;
+    background: radial-gradient(circle, rgba(177, 17, 156, 0.993) 35%, rgb(153, 185, 7) 100%);
+    border-radius: 30%;
+    width: 4em;
+    height: 3em;
+    border: 2px solid rgb(32, 238, 13);
+    color: rgb(37, 180, 61);
+    font-size: 3em;
+    text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				-1px -1px 0 #000;
+ }
+
+ #gameOverScreen{
+    background-color: rgb(128, 240, 165);
+    height: 100%;
+    background-image: url("https://64.media.tumblr.com/b7ea72d97b1a15267519e1248ebab223/tumblr_p3kirquKMs1w27jeoo1_500.gifv");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60%;
+    display:none;
+    font-size: 1em;
+    padding: 1.5em;
+}
+#gameOverMsg{
+    padding: 1em;
+    font-size: 3.5em;
+    color:floralwhite;
+    text-shadow: -1px 1px 5px rgb(53, 3, 3),
+				  1px 1px 5px rgb(172, 8, 8),
+				  1px -1px 0 rgb(129, 9, 9),
+				-1px -1px 0 rgb(104, 5, 5);
+    
+}
+
+#sound{
+     display: inline-flex;
+     height: 50px;
+     padding:0;
+     background:rgb(18, 15, 37);
+     border: none;
+     outline: none;
+     border-radius: 5px;
+     overflow:hidden;
+ }
+
+#board {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    width: calc(20 * 20px);
+    margin: auto;
+} 
+
+#startScreen{
+    background-color: rgb(128, 240, 165);
+    height: 100%;
+    background-image: url("https://c.tenor.com/JHCBI26vkJIAAAAM/alien-alien-dance.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 60%;
+}
+#intro{
+    font-size: 3em;
+    padding: 1em;
+}
+#directions{
+    font-size: 1.5em;
+}
+#header {
+    color: chartreuse;
+    font-size: 1em;
+    padding: 1em;
+    padding: 1em;
+    text-shadow: -1px 1px 5px rgb(53, 3, 3),
+				  1px 1px 5px rgb(172, 8, 8),
+				  1px -1px 0 rgb(129, 9, 9),
+				-1px -1px 0 rgb(104, 5, 5);
+}
+
+    
+#board .snake {
+    background-image: url("https://mpng.subpng.com/20181121/bss/kisspng-clip-art-openclipart-illustration-image-spacecraft-home-aion-rsa-5bf4f7630f1b93.2622367215427807710619.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 50%;
+    background-color: rgb(165, 185, 142);
+    box-shadow: 0 1px 5px 5px rgb(240, 234, 234);  
+}
+
+#board .apple {
+    background-image: url("https://i.gifer.com/origin/2b/2b0512a6a83b60cc52d4117e6adfd824_w200.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 1;
+    border-radius: 60%;
+    background-color: rgb(165, 185, 142);
+    box-shadow: 0 1px 5px 5px rgb(240, 234, 234);  
+}
+
+.button {
+    align-items: center;
+    display: flex;
+    justify-content: start;
+    padding: 8px;
+    margin-right: 50%;
+    
+}
+
+#board div {
+    opacity: 0.3;
+    background-color: rgb(170, 243, 198);
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+
+
+.up:hover, .down:hover, .left:hover, .right:hover, #reset:hover, #start:hover{
+    background-color: rgb(182, 201, 196);
+    color: rgb(244, 247, 243);
+    box-shadow: 0 2px 5px 2px rgb(240, 234, 234);    
+}
+
+.up {
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    transform: translateY(25%);
+    margin-bottom: 1px;
+    height: 2em;
+    width: 2.5em;
+    border: 2px solid rgb(13, 238, 24);
+    box-shadow: 0px 0px 20px  #0b4d09;
+    border-radius: 30%;
+    background: radial-gradient(circle, rgba(148,219,168,.8) 35%, rgba(12,97,56,1) 100%);
+}
+
+.left{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    transform: translateX(25%) ;
+    margin-right: 30px;
+    height: 2em;
+    width: 3em;
+    border-radius: 30%;
+    border: 2px solid rgb(13, 238, 24);
+    box-shadow: 0px 0px 20px  #0b4d09;
+    background: radial-gradient(circle, rgba(148,219,168,.8) 35%, rgba(12,97,56,1) 100%);
+}
+
+.right {
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    transform: translateX(-25%);
+    margin-left: 30px;
+    height: 2em;
+    width: 3em;
+    border-radius: 30%;
+    border: 2px solid rgb(13, 238, 24);
+    box-shadow: 0px 0px 20px  #0b4d09;
+    background: radial-gradient(circle, rgba(148,219,168,.8) 35%, rgba(12,97,56,1) 100%);
+}
+
+.down {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    transform: translateY(-25%);
+    margin-top: 1px;
+    height: 2em;
+    width: 3em;
+    border-radius: 30%;
+    border: 2px solid rgb(13, 238, 24);
+    box-shadow: 0px 0px 20px  #0b4d09;
+    background: radial-gradient(circle, rgba(148,219,168,.8) 35%, rgba(12,97,56,1) 100%);
+}
+
+@media (max-width: 649px) {
+    #board {
+        width: calc(20 * 3.5vw);
+    }
+
+    #board div {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+   #intro, #start, #directions {
+       font-size: 1.5em;
+   } 
+
+}
+
+
